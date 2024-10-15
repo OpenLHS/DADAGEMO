@@ -1,0 +1,10 @@
+IRI,value,def
+DADAGEMO_0000001,unit of work,A directive information entity that aims to maximally direct an unit of work process.
+DADAGEMO_0000002,simple unit of work,An unit of work that doesn't includes other unit of work.
+DADAGEMO_0000003,composed unit of work,An unit of work that includes a set of unit of works.
+DADAGEMO_0000004,logistic unit of work,An unit of work that doesn't includes ohter unit of work and has no reference to a set of unit of assessment.
+DADAGEMO_0000005,unit of work process,TBD
+DADAGEMO_0000006,clean signal,An unit of work process by which a plan entity cleans (erases) the specified signal.
+DADAGEMO_0000007,send signal,An unit of work process by which a plan entity sends a specific signal to a specified channel.
+DADAGEMO_0000008,wait for signal,An unit of work process by which a plan entity waits until a specific signal is available through a specified channel; then ends.
+DADAGEMO_0000009,project component activity,An unit of work process

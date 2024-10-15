@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/DADAGEMO/DADAGEMO-base.owl#"
+     xml:base="http://purl.obolibrary.org/obo/DADAGEMO/DADAGEMO-base.owl"
+     xmlns:dce="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DADAGEMO/DADAGEMO-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO/releases/2024-10-15/DADAGEMO-base.owl"/>
+        <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <dcterms:description>None</dcterms:description>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
+        <dcterms:title>Ontology for DADAGEM specification language</dcterms:title>
+        <owl:versionInfo>2024-10-15</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000010 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000010">
+        <obo:IAO_0000115 xml:lang="en">An annotation that specifies the type of output arguments of a given process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">out argument</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000011 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000011">
+        <obo:IAO_0000115 xml:lang="en">An out argument annotation that specifies the type of out argument valueset.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">out argument type</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000012 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000012">
+        <obo:IAO_0000115 xml:lang="en">An out argument annotation that describes the expected values of the out argument.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">out argument description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000013 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000013">
+        <obo:IAO_0000115 xml:lang="en">An out argument annotation that specifies the different possible value of the out argument.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">out argument valueset</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OpenLHS-Core_0000067 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OpenLHS-Core_0000067"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that aims to maximally direct an unit of work process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit of work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work that doesn&apos;t includes other unit of work.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">simple unit of work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000002"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000004"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An unit of work that includes a set of unit of works.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">composed unit of work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000001"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work that doesn&apos;t includes ohter unit of work and has no reference to a set of unit of assessment.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">logistic unit of work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000067"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">TBD</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">unit of work process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity cleans (erases) the specified signal.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">clean signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity sends a specific signal to a specified channel.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">send signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">wait for signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DADAGEMO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">project component activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
+

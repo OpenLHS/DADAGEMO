@@ -19,5 +19,5 @@ import_group:
 robot_report:
   custom_sparql_exports:
     - base-classes-report
-    - base-properties-report
+    - base-annotations-report
 robot_java_args: "-Xmx16G"

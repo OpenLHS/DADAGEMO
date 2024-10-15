@@ -1,0 +1,5 @@
+IRI,value,def
+DADAGEMO_0000010,out argument,An annotation that specifies the type of output arguments of a given process.
+DADAGEMO_0000011,out argument type,An out argument annotation that specifies the type of out argument valueset.
+DADAGEMO_0000012,out argument description,An out argument annotation that describes the expected values of the out argument.
+DADAGEMO_0000013,out argument valueset,An out argument annotation that specifies the different possible value of the out argument.

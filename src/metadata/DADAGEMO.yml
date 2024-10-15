@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/DADAGEMO
+
+idspace: DADAGEMO
+base_url: /obo/DADAGEMO
+
+products:
+- DADAGEMO.owl: https://raw.githubusercontent.com/OpenLHS/DADAGEMO/main/DADAGEMO.owl
+- DADAGEMO.obo: https://raw.githubusercontent.com/OpenLHS/DADAGEMO/main/DADAGEMO.obo
+
+term_browser: ontobee
+example_terms:
+- DADAGEMO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/DADAGEMO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/DADAGEMO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DADAGEMO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/DADAGEMO/main/
+

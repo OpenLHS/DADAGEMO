@@ -1,0 +1,23 @@
+id: DADAGEMO
+title: Ontology for DADAGEM specification language
+github_org: OpenLHS
+repo: DADAGEMO
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+  - non-classified
+primary_release: non-classified
+export_formats:
+  - owl
+import_group:
+  products:
+    - id: OpenLHS-Core
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/OpenLHS-Core/main/OpenLHS-Core.owl"  
+robot_report:
+  custom_sparql_exports:
+    - base-classes-report
+    - base-properties-report
+robot_java_args: "-Xmx16G"

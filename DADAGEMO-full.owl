@@ -16,11 +16,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/DADAGEMO/DADAGEMO-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO/releases/2024-10-15/DADAGEMO-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO/releases/2024-10-23/DADAGEMO-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Ontology for DADAGEM specification language</dcterms:title>
-        <owl:versionInfo>2024-10-15</owl:versionInfo>
+        <owl:versionInfo>2024-10-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3188,9 +3188,17 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity cleans (erases) the specified signal.</obo:IAO_0000115>
+        <obo:DADAGEMO_0000010>cleanCondition</obo:DADAGEMO_0000010>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity cleans (erases) all signal associated to the specified condition.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">clean signal</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000006"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+        <owl:annotatedTarget>cleanCondition</owl:annotatedTarget>
+        <obo:DADAGEMO_0000011>string</obo:DADAGEMO_0000011>
+        <obo:DADAGEMO_0000012>The associated condition of the signals that have to be cleaned.</obo:DADAGEMO_0000012>
+    </owl:Axiom>
     
 
 
@@ -3198,9 +3206,17 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity sends a specific signal to a specified channel.</obo:IAO_0000115>
+        <obo:DADAGEMO_0000010>signalCondition</obo:DADAGEMO_0000010>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity sends a signal associated to the specified condition.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">send signal</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+        <owl:annotatedTarget>signalCondition</owl:annotatedTarget>
+        <obo:DADAGEMO_0000011>string</obo:DADAGEMO_0000011>
+        <obo:DADAGEMO_0000012>The associated condition of the sent signal.</obo:DADAGEMO_0000012>
+    </owl:Axiom>
     
 
 
@@ -3208,9 +3224,17 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/DADAGEMO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000005"/>
-        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity waits until a specific signal is available through a specified channel; then ends.</obo:IAO_0000115>
+        <obo:DADAGEMO_0000010>waitCondition</obo:DADAGEMO_0000010>
+        <obo:IAO_0000115 xml:lang="en">An unit of work process by which a plan entity waits until a signal associated to the specified condition is sent; then ends.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">wait for signal</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/DADAGEMO_0000010"/>
+        <owl:annotatedTarget>waitCondition</owl:annotatedTarget>
+        <obo:DADAGEMO_0000011>string</obo:DADAGEMO_0000011>
+        <obo:DADAGEMO_0000012>The associated condition of the sent signal.</obo:DADAGEMO_0000012>
+    </owl:Axiom>
     
 
 
@@ -4027,7 +4051,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf rdf:nodeID="genid190"/>
+        <rdfs:subClassOf rdf:nodeID="genid193"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -4038,14 +4062,14 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid190">
+    <owl:Restriction rdf:nodeID="genid193">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid190"/>
+        <owl:annotatedTarget rdf:nodeID="genid193"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
